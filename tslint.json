@@ -12,6 +12,21 @@
     ]
   },
   "rules": {
-    "no-console": false
+    "no-console": false,
+    "deprecation": {
+      "severity": "warning"
+    },
+    "rxjs-no-subject-unsubscribe": {
+      "severity": "error"
+    },
+    "rxjs-no-unsafe-scope": {
+      "severity": "error"
+    },
+    "rxjs-no-unsafe-switchmap": {
+      "severity": "error"
+    },
+    "rxjs-throw-error": {
+      "severity": "error"
+    }
   }
 }

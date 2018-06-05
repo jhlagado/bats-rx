@@ -1,6 +1,5 @@
 import { range } from 'rxjs';
 import { asyncScheduler } from 'rxjs';
-
 import { tap } from 'rxjs/operators';
 
 test('Emits values synchronously on default', done => {
