@@ -33,8 +33,8 @@ describe('Search component', () => {
         };
 
         const scheduler = new TestScheduler(assertDeepEqual);
-        const source = scheduler.createHotObservable(searchEvents, searchValues);
-        const actual = search$((source as Observable<any>), searchFn, '', scheduler);
+        const source:Observable<any> = scheduler.createHotObservable(searchEvents, searchValues);
+        const actual = search$(source, searchFn, '', scheduler);
 
         const expected = '-'.repeat(50) + '-f------(s|)';
 
